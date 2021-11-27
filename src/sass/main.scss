@@ -1,5 +1,18 @@
-@import './variables';
-@import './disabled';
-@import './base';
-@import './header';
-@import './hero';
+// UTILS
+
+@import './utils/variables';
+@import './utils/disabled';
+@import './utils/visually-hidden';
+
+// LAYOUT
+@import './layout/base';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/mainPage';
+
+// COMPONENTS
+
+@import './components/link-btn';
+@import './components/social-icons';
+@import './components/sections';
+@import './components/footer';
