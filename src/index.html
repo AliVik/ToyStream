@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans+Condensed:wght@300;700&family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Shadows+Into+Light&family=Source+Code+Pro:wght@700&display=swap"
       rel="stylesheet">
     <link
       rel="stylesheet"
@@ -37,8 +37,9 @@
                 <li>Контакты</li>
               </ul>
             </nav>
-            <button class="lang-btn">ENG</button>
+            <button class="lang-btn btn-text">ENG</button>
         </div>
+        <div class="background-image"></div>
       
     </header>
      
@@ -47,40 +48,95 @@
      
        <section class="hero">
         <h1 class="hero__title">МЫ СОЗДАЕМ МОБИЛЬНЫЕ ИГРЫ, В КОТОРЫЕ ТЫ ИГРАЕШЬ</h1>
-        <img src="./images/mobile-unihorn.webp" alt="единорог">
+        <img src="./images/mobile-unihorn.webp" alt="unihorn" class="hero__img">
        </section>
-        
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button>Узнать подробнее</button>
-        <p>«Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.»
-        </p>
+        <section class="main-page">
+          <ul class="social-icons visually-hidden">
+            <li>
+              <svg class="social-icons__item">
+                <use href='./images/symbol-defs.svg#icon-pinterest'></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="social-icons__item">
+                <use href='./images/symbol-defs.svg#icon-Behance'></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="social-icons__item">
+                <use href='./images/symbol-defs.svg#icon-dribble'></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="social-icons__item">
+                <use href='./images/symbol-defs.svg#icon-snapchat'></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="social-icons__item">
+                <use href='./images/symbol-defs.svg#icon-linkedin'></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="social-icons__item">
+                <use href='./images/symbol-defs.svg#icon-facebook'></use>
+              </svg>
+            </li>
+          </ul>
+          <a href='' class="main-page__btn link-btn">
+            <div class="main-page__btn-content">
+              <p class="btn-text">Узнать подробнее</p>
+              <img src="./images/btn-arrow.svg" alt="arrow on button" class="btn-arrow">
+            </div>
+          
+          </a>
+          <p class="main-page__description">Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.
+          </p>
+          <div class="background-image"></div>
+        </section>
      
      
    </main>
    <footer>
-     
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+     <div class="footer-content">
+        <p><span>&#169</span>Toy.Stream, Inc.</p>
+        <ul class="footer-content__social-icons">
+          <li>
+            <svg class="social-icons__item">
+              <use href='./images/symbol-defs.svg#icon-pinterest'></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="social-icons__item">
+              <use href='./images/symbol-defs.svg#icon-Behance'></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="social-icons__item">
+              <use href='./images/symbol-defs.svg#icon-dribble'></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="social-icons__item">
+              <use href='./images/symbol-defs.svg#icon-snapchat'></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="social-icons__item">
+              <use href='./images/symbol-defs.svg#icon-linkedin'></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="social-icons__item">
+              <use href='./images/symbol-defs.svg#icon-facebook'></use>
+            </svg>
+          </li>
         </ul>
-     
- 
+     </div>
    </footer>
   </div>
   </div>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>
