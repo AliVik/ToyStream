@@ -1,0 +1,21 @@
+h1,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: $main-page-font;
+  color: $main-text-color;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (max-width: 1023px) {
+    max-width: 375px;
+  }
+}

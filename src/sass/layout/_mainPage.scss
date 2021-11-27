@@ -1,0 +1,38 @@
+.main-page {
+  &__btn {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+  }
+
+  &__btn-content {
+    position: absolute;
+    top: 25%;
+    text-align: start;
+  }
+
+  &__description {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .background-image {
+    height: 914px;
+  }
+}
+.btn-text {
+  color: $btnTextColor;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.23;
+  margin: 0 auto;
+  font-stretch: extra-condensed;
+}
+
+.btn-arrow {
+  margin-top: 11px;
+}
