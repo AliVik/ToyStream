@@ -1,0 +1,9 @@
+.footer-content {
+  display: flex;
+  padding: 14px;
+  height: 54px;
+  align-items: center;
+  &__social-icons {
+    display: flex;
+  }
+}
