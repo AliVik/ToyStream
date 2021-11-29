@@ -1,10 +1,29 @@
+.footer {
+  background-color: #efefef;
+}
+
 .footer-content {
   display: flex;
   padding: 14px;
   height: 54px;
+  justify-content: space-between;
   align-items: center;
-  background-color: #efefef;
+  &__social-item:not(:last-child) {
+    margin-right: 9.72px;
+  }
+
   &__social-icons {
     display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-end;
+    color: #7e7e7e;
+  }
+
+  &__logo-unicode {
+    margin-right: 5px;
+    text-align: center;
   }
 }
