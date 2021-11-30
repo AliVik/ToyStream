@@ -1,0 +1,46 @@
+.about-company {
+  padding-top: 78px;
+  padding-bottom: 51px;
+  &__description:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+}
+
+.about-company__conditions {
+  color: $main-text-color;
+}
+
+.achievments {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1023px) {
+    flex-basis: calc((100%-161) / 2);
+    max-width: 296px;
+
+    &__item:not(:nth-child(2n)) {
+      margin-right: 65px;
+    }
+    &__item {
+      width: 115px;
+      height: 170px;
+    }
+    &__item:not(:nth-child(n + 3)) {
+      margin-bottom: 23.75px;
+    }
+
+    &__item-icon {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
+
+.icon-bg {
+  background-color: $icons-bgcolor;
+  width: 85.62px;
+  height: 85.62px;
+}
