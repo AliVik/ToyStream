@@ -259,9 +259,25 @@ body {
   padding-bottom: 61px;
 }
 
+.our-team__container {
+  overflow: hidden;
+}
+
 .our-team__title {
   max-width: 267px;
   margin-bottom: 34px;
+}
+
+.our-team__list {
+  display: flex;
+}
+
+.our-team__list-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.our-team__description {
+  margin-top: 16px;
 }
 
 .link-btn {

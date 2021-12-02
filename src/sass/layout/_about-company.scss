@@ -68,8 +68,24 @@
 
 .our-team {
   padding-bottom: 61px;
-}
-.our-team__title {
-  max-width: 267px;
-  margin-bottom: 34px;
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__title {
+    max-width: 267px;
+    margin-bottom: 34px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-right: 46px;
+  }
+  &__description {
+    margin-top: 16px;
+  }
 }
