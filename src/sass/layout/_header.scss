@@ -1,7 +1,3 @@
-.background-image {
-  height: 900px;
-}
-
 .burger-menu_button {
   background-color: transparent;
 
@@ -73,6 +69,7 @@
   top: 0;
   z-index: -1;
 
+  height: 973px;
   background-color: $mainPage-bgcolor;
 
   @media screen and(max-width:1023px) {

@@ -53,10 +53,6 @@ body {
   }
 }
 
-.background-image {
-  height: 900px;
-}
-
 .burger-menu_button {
   background-color: transparent;
   border: none;
@@ -131,6 +127,7 @@ body {
   right: 0;
   top: 0;
   z-index: -1;
+  height: 973px;
   background-color: #ffee2f;
 }
 
@@ -169,10 +166,6 @@ body {
 .main-page__description {
   margin-top: 25px;
   max-width: 345px;
-}
-
-.main-page .background-image {
-  height: 914px;
 }
 
 .btn-text {
@@ -233,12 +226,27 @@ body {
     width: 44px;
     height: 44px;
   }
+  .achievments__description {
+    margin-top: 11.75px;
+  }
 }
 
 .icon-bg {
+  position: relative;
+  display: flex;
   background-color: #e8d935;
   width: 85.62px;
   height: 85.62px;
+}
+
+.icon-shadow {
+  position: absolute;
+  z-index: -1;
+  left: 14.38px;
+  bottom: 15.62px;
+  width: 85.62px;
+  height: 85.62px;
+  background-color: #f2e33a;
 }
 
 .link-btn {
@@ -295,10 +303,23 @@ body {
 
 .title {
   font-family: "Russo One", sans-serif;
+  font-size: 32px;
+  line-height: 1.18;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.09em;
-  word-spacing: 0.2em;
   max-width: 352px;
+}
+
+.accent-text {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.secondaccent-text {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */

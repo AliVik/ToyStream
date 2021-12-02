@@ -1,8 +1,6 @@
 .title {
-  font-family: $main-accent-font;
+  @include font($main-accent-font, 32px, 1.18);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.09em;
-  word-spacing: 0.2em;
   max-width: 352px;
 }
