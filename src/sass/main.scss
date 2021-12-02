@@ -3,6 +3,8 @@
 @import './utils/variables';
 @import './utils/disabled';
 @import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
 
 // LAYOUT
 @import './layout/base';
@@ -18,3 +20,5 @@
 @import './components/sections';
 @import './components/footer';
 @import './components/title';
+@import './components/accent-text';
+@import './components/secondaccent-text';
