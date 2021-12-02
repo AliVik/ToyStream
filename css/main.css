@@ -149,6 +149,11 @@ body {
   display: block;
 }
 
+.main-page {
+  padding-top: 69px;
+  padding-bottom: 88px;
+}
+
 .main-page__btn {
   position: relative;
   display: block;
@@ -225,6 +230,7 @@ body {
   .achievments__item-icon {
     width: 44px;
     height: 44px;
+    margin: auto;
   }
   .achievments__description {
     margin-top: 11.75px;
@@ -249,6 +255,15 @@ body {
   background-color: #f2e33a;
 }
 
+.our-team {
+  padding-bottom: 61px;
+}
+
+.our-team__title {
+  max-width: 267px;
+  margin-bottom: 34px;
+}
+
 .link-btn {
   text-decoration: none;
   display: inline-block;
@@ -259,15 +274,6 @@ body {
 .social-icons__item {
   width: 25px;
   height: 25px;
-}
-
-.main-page {
-  padding-top: 69px;
-  padding-bottom: 88px;
-}
-
-.hero {
-  position: relative;
 }
 
 .footer {
@@ -321,5 +327,6 @@ body {
   font-size: 16px;
   line-height: 1.25;
   font-weight: 300;
+  color: #646464;
 }
 /*# sourceMappingURL=main.css.map */
