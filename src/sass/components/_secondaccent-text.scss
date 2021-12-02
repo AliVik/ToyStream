@@ -1,4 +1,5 @@
 .secondaccent-text {
   @include font($main-page-font, 16px, 1.25);
   font-weight: 300;
+  color: #646464;
 }
