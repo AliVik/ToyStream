@@ -39,6 +39,7 @@
     &__item-icon {
       width: 44px;
       height: 44px;
+      margin: auto;
     }
     &__description {
       margin-top: 11.75px;
@@ -61,4 +62,14 @@
   width: 85.62px;
   height: 85.62px;
   background-color: $icons-bgshadow;
+}
+
+// НАША КОМАНДА
+
+.our-team {
+  padding-bottom: 61px;
+}
+.our-team__title {
+  max-width: 267px;
+  margin-bottom: 34px;
 }
