@@ -20,6 +20,7 @@
 .achievments {
   display: flex;
   flex-wrap: wrap;
+
   @media screen and (max-width: 1023px) {
     flex-basis: calc((100%-161) / 2);
     max-width: 296px;
@@ -39,11 +40,25 @@
       width: 44px;
       height: 44px;
     }
+    &__description {
+      margin-top: 11.75px;
+    }
   }
 }
 
 .icon-bg {
+  position: relative;
+  display: flex;
   background-color: $icons-bgcolor;
   width: 85.62px;
   height: 85.62px;
+}
+.icon-shadow {
+  position: absolute;
+  z-index: -1;
+  left: 14.38px;
+  bottom: 15.62px;
+  width: 85.62px;
+  height: 85.62px;
+  background-color: $icons-bgshadow;
 }
