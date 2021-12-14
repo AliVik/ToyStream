@@ -15,6 +15,9 @@ body {
   line-height: 1.25;
   color: $main-text-color;
 }
+button {
+  border: none;
+}
 .container {
   position: relative;
   margin: 0 auto;

@@ -1,0 +1,27 @@
+.switch-pictures {
+  display: flex;
+  justify-content: space-between;
+
+  &__btn {
+    background-color: #f1f1f1;
+    width: 67px;
+    height: 67px;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+    width: 25px;
+    height: 21px;
+    fill: #000;
+  }
+}
+
+.is-active {
+  background-color: $extra-color;
+}
+// .switch-buttons {
+//   display: block;
+//   width: 67px;
+//   height: 67px;
+// }

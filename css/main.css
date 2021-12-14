@@ -40,6 +40,10 @@ body {
   color: #000;
 }
 
+button {
+  border: none;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
@@ -203,6 +207,10 @@ body {
   margin-bottom: 24px;
 }
 
+.about-company__switch-pictures {
+  padding-bottom: 40px;
+}
+
 .about-company__conditions {
   color: #000;
 }
@@ -344,5 +352,28 @@ body {
   line-height: 1.25;
   font-weight: 300;
   color: #646464;
+}
+
+.switch-pictures {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switch-pictures__btn {
+  background-color: #f1f1f1;
+  width: 67px;
+  height: 67px;
+}
+
+.switch-pictures__img {
+  display: block;
+  margin: auto;
+  width: 25px;
+  height: 21px;
+  fill: #000;
+}
+
+.is-active {
+  background-color: #ce0002;
 }
 /*# sourceMappingURL=main.css.map */
