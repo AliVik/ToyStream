@@ -21,6 +21,7 @@
 }
 
 h1,
+h2,
 p,
 ul {
   margin: 0;
@@ -42,6 +43,11 @@ body {
 
 button {
   border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -375,5 +381,83 @@ button {
 
 .is-active {
   background-color: #ce0002;
+}
+
+.backdrop-menu-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mobile-menu {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.mobile-menu__pages {
+  padding-top: 54px;
+  padding-bottom: 77.11px;
+}
+
+.mobile-menu__pages-link {
+  color: #000;
+}
+
+.mobile-menu__pages-title:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.mobile-menu__pages-item {
+  margin-bottom: 71px;
+}
+
+.mobile-menu__social-icons-item:not(:last-child) {
+  margin-right: 13.57px;
+}
+
+.mobile-menu__social-icons-img {
+  width: 34.9px;
+  height: 34.9px;
+}
+
+.backdrop-logo {
+  margin-left: 71px;
+}
+
+.cross-button {
+  background-color: transparent;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.cross-button :hover,
+.cross-button :focus {
+  border: 4px solid #ce0002;
+  outline-offset: 20px;
+  border-radius: 50%;
+  animation: animateCross 1000ms linear;
+}
+
+.cross-button__item {
+  width: 26.16px;
+  height: 26.16px;
+}
+
+@keyframes animateCross {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
