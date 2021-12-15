@@ -1,0 +1,71 @@
+.backdrop-menu-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mobile-menu {
+  position: fixed;
+  overflow: hidden;
+
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  &__pages {
+    padding-top: 54px;
+    padding-bottom: 77.11px;
+  }
+  &__pages-link {
+    color: $main-text-color;
+  }
+  &__pages-title:not(:last-child) {
+    margin-bottom: 50px;
+  }
+  &__pages-item {
+    margin-bottom: 71px;
+  }
+  &__social-icons-item:not(:last-child) {
+    margin-right: 13.57px;
+  }
+  &__social-icons-img {
+    width: 34.9px;
+    height: 34.9px;
+  }
+}
+.backdrop-logo {
+  margin-left: 71px;
+}
+.cross-button {
+  background-color: transparent;
+  padding: 4px;
+  cursor: pointer;
+
+  :hover,
+  :focus {
+    border: 4px solid $extra-color;
+    outline-offset: 20px;
+    border-radius: 50%;
+    animation: animateCross 1000ms linear;
+  }
+  &__item {
+    width: 26.16px;
+    height: 26.16px;
+  }
+}
+
+@keyframes animateCross {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
