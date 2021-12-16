@@ -1,3 +1,4 @@
+
 export const refs = {
     burgerMenu: document.querySelector('.burger-menu_button'),
     mobileMenu:document.querySelector('.mobile-menu'),
