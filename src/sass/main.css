@@ -313,6 +313,30 @@ a {
   margin-top: 16px;
 }
 
+.games__background-image {
+  background-color: #d3d1e9;
+}
+
+.games__section {
+  padding-top: 78px;
+  padding-bottom: 117px;
+  background-repeat: no-repeat;
+}
+
+.games__title {
+  margin-bottom: 24px;
+}
+
+.games__description:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.games__hero {
+  display: block;
+  margin-top: 43px;
+  margin-left: auto;
+}
+
 .link-btn {
   text-decoration: none;
   display: inline-block;
@@ -427,7 +451,7 @@ a {
 
 .mobile-menu {
   position: fixed;
-  z-index: 1045645;
+  z-index: 1;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -468,8 +492,12 @@ a {
 
 .cross-button {
   background-color: transparent;
-  padding: 4px;
+  padding: 8px;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 2000ms linear;
+  transition: -webkit-transform 2000ms linear;
+  transition: transform 2000ms linear;
+  transition: transform 2000ms linear, -webkit-transform 2000ms linear;
 }
 
 .cross-button :hover,

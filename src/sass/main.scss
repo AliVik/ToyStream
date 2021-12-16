@@ -6,12 +6,15 @@
 @import './utils/mixins';
 @import './utils/placeholders';
 
+@import './base/common-styles';
+
 // LAYOUT
-@import './layout/base';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/mainPage';
 @import './layout/about-company';
+@import './layout/games';
 
 // COMPONENTS
 
