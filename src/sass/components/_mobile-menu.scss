@@ -7,8 +7,8 @@
 
 .mobile-menu {
   position: fixed;
+  z-index: 1;
   overflow: hidden;
-
   top: 0;
   left: 0;
   min-height: 100%;
@@ -42,8 +42,9 @@
 }
 .cross-button {
   background-color: transparent;
-  padding: 4px;
+  padding: 8px;
   cursor: pointer;
+  transition: transform 2000ms linear;
 
   :hover,
   :focus {
