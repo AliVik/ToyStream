@@ -28,6 +28,8 @@
   align-items: center;
 
   &__logo {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +53,7 @@
 
 .lang-btn {
   position: absolute;
+  z-index: 1;
   right: 0;
   font-weight: 300;
   padding: 0;
@@ -67,7 +70,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 
   height: 973px;
   background-color: $mainPage-bgcolor;
