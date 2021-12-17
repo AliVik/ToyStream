@@ -32,3 +32,13 @@ a {
     max-width: 400px;
   }
 }
+
+.accent-text {
+  @include font($main-page-font, 32px, 1.25);
+}
+
+.secondaccent-text {
+  @include font($main-page-font, 16px, 1.25);
+  font-weight: 300;
+  color: #646464;
+}
