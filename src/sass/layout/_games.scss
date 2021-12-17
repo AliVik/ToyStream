@@ -1,3 +1,9 @@
+.games-products,
+.games__section,
+.game-header {
+  background-color: $gamePage-sectionsBgColor;
+}
+
 .games {
   &__background-image {
     background-color: $gamePage-bgcolor;
@@ -21,8 +27,11 @@
     margin-bottom: 24px;
   }
 
-  &__description:not(:last-child) {
+  &__description:nth-child(2) {
     margin-bottom: 15px;
+  }
+  &__description:nth-child(3) {
+    margin-bottom: 25px;
   }
 
   //   удалить, заменив на отзывчивые
@@ -31,4 +40,21 @@
     margin-top: 43px;
     margin-left: auto;
   }
+
+  &__img {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.our-projects {
+  &__item {
+    @media screen and (max-width: 1027px) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.games-products {
+  padding-bottom: 243px;
 }

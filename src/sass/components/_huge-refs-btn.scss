@@ -1,0 +1,31 @@
+.button-refs {
+  height: 94px;
+  max-width: 192px;
+  background-color: $extra-color;
+  align-items: center;
+  justify-content: start;
+
+  &__text {
+    margin-right: 14px;
+    margin-left: 0;
+  }
+  &__arrow {
+    height: 42px;
+  }
+}
+
+.watch-works-btn {
+  display: flex;
+  margin-top: 32px;
+  margin-left: 91px;
+  padding: 20px;
+}
+
+.know-more-btn {
+  display: block;
+  padding: 26px 49px;
+
+  &__text {
+    margin-bottom: 5px;
+  }
+}

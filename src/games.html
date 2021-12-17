@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,9 +15,10 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./sass/main.scss">
 </head>
+
 <body>
     <include src="./partials/mobile-menu.html"></include>
-    <header>
+    <header class="game-header">
         <div class="container">
             <div class="flex-header">
                 <button class="burger-menu_button">
@@ -40,19 +42,22 @@
             </div>
             <div class="background-image games__background-image"></div>
         </div>
-    
-    
+
+
     </header>
     <main>
         <section class="games__section">
             <div class="container">
                 <h1 class="title games__title">Игры</h1>
-                <p class="games__description">Toy.Stream сегодня — это команда из более 500 человек и офисы по всему миру. 
-                    Мы входим в топ-10 игровых разработчиков по установкам — общее количество загрузок перевалило за 2 млрд, а ежемесячная аудитория составляет более 250 млн игроков.
-                
-               </p>
+                <p class="games__description">Toy.Stream сегодня — это команда из более 500 человек и офисы по всему
+                    миру.
+                    Мы входим в топ-10 игровых разработчиков по установкам — общее количество загрузок перевалило за 2
+                    млрд, а ежемесячная аудитория составляет более 250 млн игроков.
+
+                </p>
                 <p class="games__description">
-                    В разработке у нас всегда находится более десяти проектов одновременно. Мы постоянно экспериментируем, ищем новые тренды
+                    В разработке у нас всегда находится более десяти проектов одновременно. Мы постоянно
+                    экспериментируем, ищем новые тренды
                     и пробуем себя в новых жанрах.
                 </p>
 
@@ -60,120 +65,159 @@
                 <img src="./images/mobile-gamebg.webp" alt="game background image" class="games__hero">
 
 
-                <button><a href="">Смотреть наши работы</a></button>
-            </div>
+                
+                <a href="#our-works" class="button-refs watch-works-btn">
+                    <p class="btn-text button-refs__text">Смотреть<br> наши работы</p>
+                    <img src="./images/arrow-down.svg" alt="arrow down" class="button-refs__arrow">
+                </a>
+                
             
-        
+            </div>
+
+
         </section>
-     
+
         <section class="games-products">
             <div class="container">
-                <ul>
-                    <li>
-                        <h2 class="title games__title">Design masters</h2>
+                <ul class="our-projects">
+                    <li class="our-projects__item">
+                        <h2 class="title games__title" id="our-works">Design masters</h2>
                         <p class="games__description">Станьте дизайнером интерьеров!</p>
                         <p class="games__description">
-                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
                             персонажами.
                         </p>
-                        <img src="./images/mobile-design-masters.webp" alt="design masters picture">
-                        <button><a href="">Подробнее</a></button>
+                        <img src="./images/mobile-design-masters.webp" alt="design masters picture" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow" >
+                        </a>
+                       
                     </li>
-                    <li>
+                    <li class="our-projects__item">
                         <h2 class="title games__title">Perfect Makeup 3D</h2>
                         <p class="games__description">Станьте дизайнером интерьеров!</p>
                         <p class="games__description">
-                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
                             персонажами.
                         </p>
-                        <img src="./images/mobile-3d.webp" alt="3D picture">
-                        <button><a href="">Подробнее</a></button>
+                        <img src="./images/mobile-3d.webp" alt="3D picture" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow">
+                        </a>
                     </li>
-                    <li>
+                    <li class="our-projects__item">
                         <h2 class="title games__title">Escape Masters</h2>
                         <p class="games__description">Станьте дизайнером интерьеров!</p>
                         <p class="games__description">
-                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
                             персонажами.
                         </p>
-                        <img src="./images/mobile-escape.jpg" alt="escape">
-                        <button><a href="">Подробнее</a></button>
+                        <img src="./images/mobile-escape.jpg" alt="escape" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow">
+                        </a>
                     </li>
-                    <li>
-                            <h2 class="title games__title">Hitmasters</h2>
-                            <p class="games__description">Станьте дизайнером интерьеров!</p>
-                            <p class="games__description">
-                                Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
-                                персонажами.
-                            </p>
-                            <img src="./images/mobile-hitmasters.jpg" alt="hitmasters">
-                            <button><a href="">Подробнее</a></button>
+                    <li class="our-projects__item">
+                        <h2 class="title games__title">Hitmasters</h2>
+                        <p class="games__description">Станьте дизайнером интерьеров!</p>
+                        <p class="games__description">
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
+                            персонажами.
+                        </p>
+                        <img src="./images/mobile-hitmasters.jpg" alt="hitmasters" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow">
+                        </a>
                     </li>
                 </ul>
 
                 <button><a href="">Больше проектов</a></button>
-             
+
             </div>
         </section>
         <section class="last-projects">
             <div class="container">
                 <h2>Последние проекты</h2>
-                    <ul>
-                        <li>
-                            <h2 class="title games__title">Design masters</h2>
+                <ul>
+                    <li>
+                        <h2 class="title games__title">Design masters</h2>
                             <p class="games__description">Станьте дизайнером интерьеров!</p>
                             <p class="games__description">
-                                Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
+                                Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей
+                                и знакомьтесь с
                                 персонажами.
                             </p>
-                            <img src="./images/mobile-design-masters.webp" alt="design masters picture">
-                            <button><a href="">Подробнее</a></button>
-                        </li>
-                        <li>
-                            <h2 class="title games__title">Perfect Makeup 3D</h2>
-                            <p class="games__description">Станьте дизайнером интерьеров!</p>
-                            <p class="games__description">
-                                Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
-                                персонажами.
-                            </p>
-                            <img src="./images/mobile-3d.webp" alt="3D picture">
-                            <button><a href="">Подробнее</a></button>
-                        </li>
-                        <li>
-                            <h2 class="title games__title">Escape Masters</h2>
-                            <p class="games__description">Станьте дизайнером интерьеров!</p>
-                            <p class="games__description">
-                                Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
-                                персонажами.
-                            </p>
-                            <img src="./images/mobile-escape.jpg" alt="escape">
-                            <button><a href="">Подробнее</a></button>
-                        </li>
-                        <li>
-                            <h2 class="title games__title">Hitmasters</h2>
-                            <p class="games__description">Станьте дизайнером интерьеров!</p>
-                            <p class="games__description">
-                                Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и знакомьтесь с
-                                персонажами.
-                            </p>
-                            <img src="./images/mobile-hitmasters.jpg" alt="hitmasters">
-                            <button><a href="">Подробнее</a></button>
-                        </li>
-                    </ul>
-                        <div class="switch-pictures about-company__switch-pictures">
-                            <button class="switch-pictures__btn">
-                                <img src="./images/arrow-right.svg" alt="arrow left" class="switch-pictures__img">
-                            </button>
-                            <button class="switch-pictures__btn is-active">
-                                <img src="./images/arrow-left.svg" alt="arrow right" class="switch-pictures__img">
-                            </button>
-                        </div>
+                            <img src="./images/mobile-design-masters.webp" alt="design masters picture" class="games__img">
+                            <a href="" class="button-refs know-more-btn">
+                                <p class="btn-text know-more-btn__text">Подробнее</p>
+                                <img src="./images/btn-arrow.svg" alt="arrow">
+                            </a>
+                    </li>
+                    <li>
+                        <h2 class="title games__title">Perfect Makeup 3D</h2>
+                        <p class="games__description">Станьте дизайнером интерьеров!</p>
+                        <p class="games__description">
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
+                            персонажами.
+                        </p>
+                        <img src="./images/mobile-3d.webp" alt="3D picture" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow">
+                        </a>
+                    </li>
+                    <li>
+                        <h2 class="title games__title">Escape Masters</h2>
+                        <p class="games__description">Станьте дизайнером интерьеров!</p>
+                        <p class="games__description">
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
+                            персонажами.
+                        </p>
+                        <img src="./images/mobile-escape.jpg" alt="escape" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow">
+                        </a>
+                    </li>
+                    <li>
+                        <h2 class="title games__title">Hitmasters</h2>
+                        <p class="games__description">Станьте дизайнером интерьеров!</p>
+                        <p class="games__description">
+                            Проходите уровни матч-3, создавайте собственные дизайны и интерьеры, следите за историей и
+                            знакомьтесь с
+                            персонажами.
+                        </p>
+                        <img src="./images/mobile-hitmasters.jpg" alt="hitmasters" class="games__img">
+                        <a href="" class="button-refs know-more-btn">
+                            <p class="btn-text know-more-btn__text">Подробнее</p>
+                            <img src="./images/btn-arrow.svg" alt="arrow" >
+                        </a>
+                    </li>
+                </ul>
+                <div class="switch-pictures about-company__switch-pictures">
+                    <button class="switch-pictures__btn">
+                        <img src="./images/arrow-right.svg" alt="arrow left" class="switch-pictures__img">
+                    </button>
+                    <button class="switch-pictures__btn is-active">
+                        <img src="./images/arrow-left.svg" alt="arrow right" class="switch-pictures__img">
+                    </button>
+                </div>
             </div>
-            
+
 
 
         </section>
-        
+
     </main>
     <footer>
         <div class="footer">
@@ -219,4 +263,5 @@
     </footer>
     <script src="./index.js"></script>
 </body>
+
 </html>
