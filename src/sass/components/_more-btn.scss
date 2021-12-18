@@ -1,0 +1,18 @@
+.more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 40px 20px;
+  width: 192px;
+  height: 192px;
+  background-color: $extra-color;
+
+  &__text {
+    max-width: 110px;
+    margin: 0;
+  }
+  &__down-arrow {
+    height: 66px;
+  }
+}
