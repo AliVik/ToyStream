@@ -30,7 +30,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   @media screen and (max-width: 1023px) {
-    max-width: 400px;
+    max-width: 381px;
   }
 }
 
@@ -42,4 +42,22 @@ a {
   @include font($main-page-font, 16px, 1.25);
   font-weight: 300;
   color: #646464;
+}
+
+// СТИЛИ СТРЕЛОК НА КНОПКИ
+
+// ДЛИННЫЕ СТРЕЛКИ
+.long-right-left-arrow {
+  fill: $btnTextColor;
+
+  width: 100px;
+  height: 17px;
+}
+
+// КОРОТКИЕ СТРЕЛКИ
+
+.more-projects {
+  fill: $btnTextColor;
+  width: 30px;
+  height: 150px;
 }
