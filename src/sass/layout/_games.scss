@@ -1,5 +1,7 @@
+// СЕКЦИЯ ГЕРОЯ
+
 .games-products,
-.games__section,
+.games__body-bg,
 .game-header {
   background-color: $gamePage-sectionsBgColor;
 }
@@ -38,7 +40,7 @@
   &__hero {
     display: block;
     margin-top: 43px;
-    margin-left: auto;
+    margin: auto;
   }
 
   &__img {
@@ -47,14 +49,69 @@
   }
 }
 
+// СЕКЦИЯ ПРОЕКТОВ
 .our-projects {
-  &__item {
+  &__item:not(:last-child) {
     @media screen and (max-width: 1027px) {
       margin-bottom: 60px;
+    }
+  }
+  &__item:last-child {
+    @media screen and (max-width: 1027px) {
+      margin-bottom: 82px;
     }
   }
 }
 
 .games-products {
-  padding-bottom: 243px;
+  padding-bottom: 125px;
+}
+
+// СЕКЦИЯ ПОСЛЕДНИХ ПРОЕКТОВ
+.last-projects {
+  padding-top: 118px;
+  padding-bottom: 131px;
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__main-title {
+    margin-bottom: 34px;
+  }
+
+  &__title {
+    font-family: $main-page-font;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+  }
+  &__description {
+    margin-top: 1px;
+  }
+
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 57px;
+  }
+  &__know-more-btn {
+    display: block;
+    max-width: 219px;
+    height: 75.8px;
+    margin-top: 21px;
+    padding: 20px 28px;
+    text-align: center;
+    background-color: $extra-color;
+  }
+  &__description-box {
+    height: 121px;
+  }
+  &__switch-pictures {
+    margin-top: 67.21px;
+  }
 }

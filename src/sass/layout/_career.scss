@@ -1,0 +1,47 @@
+.career {
+  &__description {
+    margin-bottom: 24px;
+  }
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 20px;
+  }
+  &__hero {
+    margin-top: 34px;
+  }
+  &__hero-section {
+    padding-bottom: 38px;
+  }
+  &__background-image {
+    height: 848px;
+    background-color: $gamePage-bgcolor;
+  }
+}
+
+.our-vacations {
+  padding-top: 98px;
+
+  &__list {
+    margin-top: 29px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    width: 345px;
+    height: 345px;
+    padding: 23px 26px;
+    background-color: #f5f5f5;
+  }
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__arrows {
+    width: 91px;
+    height: 30px;
+    fill: $main-text-color;
+  }
+}
