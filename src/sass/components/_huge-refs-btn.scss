@@ -3,14 +3,14 @@
   max-width: 192px;
   background-color: $extra-color;
   align-items: center;
-  justify-content: start;
 
   &__text {
-    margin-right: 14px;
     margin-left: 0;
+    max-height: 54px;
   }
   &__arrow {
     height: 42px;
+    max-width: 20px;
   }
 }
 
