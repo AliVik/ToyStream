@@ -88,5 +88,42 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
+
+    @media screen and (max-width: 1023px) {
+      flex-basis: calc((100%-240) / 2);
+      // max-width: 296px;
+    }
+  }
+  &__item:not(:nth-child(2n)) {
+    margin-right: 120px;
+  }
+  &__item {
+    width: 115px;
+    height: 170px;
+  }
+  &__item:not(:nth-child(n + 3)) {
+    margin-bottom: 23.75px;
+  }
+
+  &__item-icon {
+    position: relative;
+    z-index: 3;
+    width: 44px;
+    height: 44px;
+    margin: auto;
+  }
+  &__description {
+    margin-top: 11.75px;
+  }
+  &__icon-bg {
+    display: flex;
+    background-color: #f5f5f5;
+    width: 85.62px;
+    height: 85.62px;
+    box-shadow: 14.38px -15.62px #fafafa;
+  }
+  &__icon-text {
+    font-stretch: extra-condensed;
   }
 }

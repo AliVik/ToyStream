@@ -22,6 +22,7 @@
 
 h1,
 h2,
+h3,
 p,
 ul {
   margin: 0;
@@ -59,8 +60,34 @@ a {
 
 @media screen and (max-width: 1023px) {
   .container {
-    max-width: 400px;
+    max-width: 381px;
   }
+}
+
+.accent-text {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.secondaccent-text {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 300;
+  color: #646464;
+}
+
+.long-right-left-arrow {
+  fill: #ffffff;
+  width: 100px;
+  height: 17px;
+}
+
+.more-projects {
+  fill: #ffffff;
+  width: 30px;
+  height: 150px;
 }
 
 .burger-menu_button {
@@ -97,6 +124,8 @@ a {
 }
 
 .flex-header__logo {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,6 +158,7 @@ a {
 
 .lang-btn {
   position: absolute;
+  z-index: 1;
   right: 0;
   font-weight: 300;
   padding: 0;
@@ -147,7 +177,7 @@ a {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
   height: 973px;
   background-color: #ffee2f;
 }
@@ -257,6 +287,8 @@ a {
     margin-bottom: 23.75px;
   }
   .achievments__item-icon {
+    position: relative;
+    z-index: 3;
     width: 44px;
     height: 44px;
     margin: auto;
@@ -268,22 +300,15 @@ a {
 
 .icon-bg {
   position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #e8d935;
   width: 85.62px;
   height: 85.62px;
-}
-
-.icon-shadow {
-  position: absolute;
-  z-index: -1;
-  left: 14.38px;
-  bottom: 15.62px;
-  width: 85.62px;
-  height: 85.62px;
-  background-color: #f2e33a;
+  -webkit-box-shadow: 14.38px -15.62px #f2e33a;
+          box-shadow: 14.38px -15.62px #f2e33a;
 }
 
 .our-team {
@@ -313,6 +338,12 @@ a {
   margin-top: 16px;
 }
 
+.games-products,
+.games__body-bg,
+.game-header {
+  background-color: #f1faff;
+}
+
 .games__background-image {
   background-color: #d3d1e9;
 }
@@ -327,14 +358,257 @@ a {
   margin-bottom: 24px;
 }
 
-.games__description:not(:last-child) {
+.games__description:nth-child(2) {
   margin-bottom: 15px;
+}
+
+.games__description:nth-child(3) {
+  margin-bottom: 25px;
 }
 
 .games__hero {
   display: block;
   margin-top: 43px;
-  margin-left: auto;
+  margin: auto;
+}
+
+.games__img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1027px) {
+  .our-projects__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  .our-projects__item:last-child {
+    margin-bottom: 82px;
+  }
+}
+
+.games-products {
+  padding-bottom: 125px;
+}
+
+.last-projects {
+  padding-top: 118px;
+  padding-bottom: 131px;
+}
+
+.last-projects__container {
+  overflow: hidden;
+}
+
+.last-projects__main-title {
+  margin-bottom: 34px;
+}
+
+.last-projects__title {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.last-projects__img {
+  margin-bottom: 16px;
+}
+
+.last-projects__description {
+  margin-top: 1px;
+}
+
+.last-projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.last-projects__item:not(:last-child) {
+  margin-right: 57px;
+}
+
+.last-projects__know-more-btn {
+  display: block;
+  max-width: 219px;
+  height: 75.8px;
+  margin-top: 21px;
+  padding: 20px 28px;
+  text-align: center;
+  background-color: #ce0002;
+}
+
+.last-projects__description-box {
+  height: 121px;
+}
+
+.last-projects__switch-pictures {
+  margin-top: 67.21px;
+}
+
+.career__description {
+  margin-bottom: 24px;
+}
+
+.career__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 28px 20px;
+}
+
+.career__hero {
+  margin-top: 34px;
+}
+
+.career__hero-section {
+  padding-bottom: 38px;
+}
+
+.career__background-image {
+  height: 848px;
+  background-color: #d3d1e9;
+}
+
+.our-vacations {
+  padding-top: 98px;
+  padding-bottom: 86px;
+}
+
+.our-vacations__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: flex-end;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+
+.our-vacations__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 345px;
+  height: 345px;
+  padding: 23px 26px;
+  background-color: #f5f5f5;
+}
+
+.our-vacations__item:hover, .our-vacations__item:focus {
+  background-color: #ce0002;
+}
+
+.our-vacations__item:hover .our-vacations__item-name,
+.our-vacations__item:hover .our-vacations__text,
+.our-vacations__item:hover .our-vacations__arrows, .our-vacations__item:focus .our-vacations__item-name,
+.our-vacations__item:focus .our-vacations__text,
+.our-vacations__item:focus .our-vacations__arrows {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 1023px) {
+  .our-vacations__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.our-vacations__item-name {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 26.76px;
+}
+
+.our-vacations__arrows {
+  width: 91px;
+  height: 30px;
+  fill: #000;
+}
+
+.our-vacations__text {
+  color: #000;
+}
+
+.advantages-of-working {
+  padding-top: 84px;
+  padding-bottom: 101px;
+}
+
+.advantages-of-working__title {
+  margin-bottom: 24px;
+}
+
+.advantages-of-working__description-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.advantages-of-working__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1023px) {
+  .advantages-of-working__list {
+    -ms-flex-preferred-size: calc((100%-240) / 2);
+        flex-basis: calc((100%-240) / 2);
+  }
+}
+
+.advantages-of-working__item:not(:nth-child(2n)) {
+  margin-right: 120px;
+}
+
+.advantages-of-working__item {
+  width: 115px;
+  height: 170px;
+}
+
+.advantages-of-working__item:not(:nth-child(n + 3)) {
+  margin-bottom: 23.75px;
+}
+
+.advantages-of-working__item-icon {
+  position: relative;
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  margin: auto;
+}
+
+.advantages-of-working__description {
+  margin-top: 11.75px;
+}
+
+.advantages-of-working__icon-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f5f5f5;
+  width: 85.62px;
+  height: 85.62px;
+  -webkit-box-shadow: 14.38px -15.62px #fafafa;
+          box-shadow: 14.38px -15.62px #fafafa;
+}
+
+.advantages-of-working__icon-text {
+  font-stretch: extra-condensed;
 }
 
 .link-btn {
@@ -401,20 +675,6 @@ a {
   max-width: 352px;
 }
 
-.accent-text {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-size: 32px;
-  line-height: 1.25;
-}
-
-.secondaccent-text {
-  font-family: "Fira Sans Extra Condensed", sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 300;
-  color: #646464;
-}
-
 .switch-pictures {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,13 +693,18 @@ a {
 .switch-pictures__img {
   display: block;
   margin: auto;
-  width: 25px;
-  height: 21px;
-  fill: #000;
+  width: 40px;
+  height: 70px;
+  fill: #807c7c;
 }
 
 .is-active {
   background-color: #ce0002;
+  fill: #ffffff;
+}
+
+.switch-pictures__btn.is-active .switch-pictures__img {
+  fill: #ffffff;
 }
 
 .backdrop-menu-container {
@@ -451,7 +716,7 @@ a {
 
 .mobile-menu {
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -542,5 +807,69 @@ a {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
+}
+
+.button-refs {
+  height: 94px;
+  max-width: 192px;
+  background-color: #ce0002;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-refs__text {
+  margin-left: 0;
+  max-height: 54px;
+}
+
+.button-refs__arrow {
+  height: 42px;
+  max-width: 20px;
+  fill: #ffffff;
+}
+
+.watch-works-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  margin-left: 91px;
+  padding: 20px;
+}
+
+.know-more-btn {
+  display: block;
+  padding: 26px 49px;
+}
+
+.know-more-btn__text {
+  margin-bottom: 5px;
+}
+
+.more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  padding: 40px 20px;
+  width: 192px;
+  height: 192px;
+  background-color: #ce0002;
+}
+
+.more-btn__text {
+  max-width: 110px;
+  margin: 0;
+}
+
+.more-btn__down-arrow {
+  height: 66px;
 }
 /*# sourceMappingURL=main.css.map */
