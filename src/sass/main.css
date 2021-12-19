@@ -611,6 +611,88 @@ a {
   font-stretch: extra-condensed;
 }
 
+.vacations {
+  padding-top: 40px;
+  padding-bottom: 62px;
+}
+
+.vacations__bgcolor {
+  background-color: #fafafa;
+}
+
+.vacations__description {
+  margin-bottom: 15px;
+}
+
+.vacations__head {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.vacations__list:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.vacations__list-item {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+.back-btn {
+  display: block;
+  padding: 26px 49px;
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+.back-btn__arrow {
+  fill: #ffffff;
+  width: 70px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.write-to-us {
+  padding-top: 105px;
+  padding-bottom: 188px;
+}
+
+.write-to-us__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+.write-to-us__input::-webkit-input-placeholder {
+  margin-bottom: 15px;
+}
+
+.write-to-us__input:-ms-input-placeholder {
+  margin-bottom: 15px;
+}
+
+.write-to-us__input::-ms-input-placeholder {
+  margin-bottom: 15px;
+}
+
+.write-to-us__input::placeholder {
+  margin-bottom: 15px;
+}
+
+.write-to-us__item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.write-to-us__bracket-icon {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 18px;
+  height: 19px;
+}
+
 .link-btn {
   text-decoration: none;
   display: inline-block;
