@@ -2,7 +2,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{}],"k63X":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.refs=void 0;const e={burgerMenu:document.querySelector(".burger-menu_button"),mobileMenu:document.querySelector(".mobile-menu"),crossIcon:document.querySelector(".cross-button"),pageHeader:document.querySelector(".flex-header")};function r(){e.burgerMenu.classList.add("visually-hidden"),e.mobileMenu.classList.remove("visually-hidden")}function s(){e.burgerMenu.classList.remove("visually-hidden"),e.mobileMenu.classList.add("visually-hidden")}exports.refs=e,e.burgerMenu.addEventListener("click",r),e.crossIcon.addEventListener("click",s);
+},{}],"JVG6":[function(require,module,exports) {
+const e=document.querySelector("#checkbox"),c=document.querySelector(".policy__svg");function t(){c.classList.toggle("visually-hidden")}e.addEventListener("change",t);
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/mobile-menu-backdrop");const i={mainSocialIcons:document.querySelector(".social-icons")};let s=window.matchMedia("(min-width: 1023px)");function e(){return s.matches?i.mainSocialIcons.classList.remove("visually-hidden"):i.mainSocialIcons.classList.add("visually-hidden")}s.addEventListener("change",e);
-},{"./sass/main.scss":"clu1","./js/mobile-menu-backdrop":"k63X"}]},{},["Focm"], null)
-//# sourceMappingURL=/ToyStream/src.80b15c46.js.map
+"use strict";require("./sass/main.scss"),require("./js/mobile-menu-backdrop"),require("./js/checkbox");const e={mainSocialIcons:document.querySelector(".social-icons")};let i=window.matchMedia("(min-width: 1023px)");function s(){return i.matches?e.mainSocialIcons.classList.remove("visually-hidden"):e.mainSocialIcons.classList.add("visually-hidden")}i.addEventListener("change",s);
+},{"./sass/main.scss":"clu1","./js/mobile-menu-backdrop":"k63X","./js/checkbox":"JVG6"}]},{},["Focm"], null)
+//# sourceMappingURL=/ToyStream/src.72c7d94c.js.map
