@@ -1,5 +1,6 @@
 import './sass/main.scss';
 import './js/mobile-menu-backdrop';
+import './js/checkbox';
 
 
 const refs = {
@@ -16,3 +17,5 @@ function removeInvisibility() {
 }
    return refs.mainSocialIcons.classList.add('visually-hidden');
 }
+
+
