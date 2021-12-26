@@ -110,41 +110,46 @@
                 <h2 class="title games__title">Напишите нам</h2>
                 <form name="write-to-us">
                     <label>
-                        ФИО
+                        <span class='write-to-us__label-text'>ФИО</span>
                         <input type="text" name="fullname" class="write-to-us__input write-to-us__item">
                     </label>
                     <label>
-                        Email
+                        <span class='write-to-us__label-text'>Email</span>
                         <input type="email" name="email" placeholder="" class="write-to-us__input write-to-us__item">
                     </label>
                    <label>
-                    Телефон
+                    <span class='write-to-us__label-text'>Телефон</span>
                         <input type="tel" name="phone-number" placeholder="" class="write-to-us__input write-to-us__item">
                    </label>
                     
                     <label class="write-to-us__item">
-                        Прикрепить резюме
+                        <span class='write-to-us__label-text'>Прикрепить резюме</span>
                         <input type="text" placeholder="" class="write-to-us__input">
                         <svg class="write-to-us__bracket-icon">
                             <use href="./images/icons.svg#icon-bracket"></use>
                         </svg>
                     </label>
                     <label class="write-to-us__item">
-                        Прикрепить дополнительные файлы
+                        <span class='write-to-us__label-text'>Прикрепить дополнительные файлы</span>
                         <input type="text" placeholder="" class="write-to-us__input">
                         <svg class="write-to-us__bracket-icon">
                             <use href="./images/icons.svg#icon-bracket"></use>
                         </svg>
                     </label>
-                    <label>
-                        Дополнительный комментарий
-                        <textarea name="comments" id="comments" placeholder=""
-                            class="write-to-us__item write-to-us__input"></textarea>
+                    <label class="write-to-us__item">
+                        <span class='write-to-us__label-textarea'>Дополнительный комментарий</span>
+                        <textarea name="comments" id="comments" class="write-to-us__input"></textarea>
                     </label>
                    
-                    <label class="write-to-us__item">
-                        <input type="checkbox">
-                        <span>Я соглашаюсь с Правилами пользования
+                    <label class="write-to-us__item policy">
+                        <div class="policy__checkbox">
+                            <input type="checkbox" id='checkbox'>
+                            <svg class="policy__svg visually-hidden">
+                                <use href="./images/icons.svg#icon-galka"></use>
+                            </svg>
+                        </div>
+                       
+                        <span class="policy__text">Я соглашаюсь с Правилами пользования
                         и Политикой конфиденциальности.</span>
                     </label>
                     
