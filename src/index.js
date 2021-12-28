@@ -1,6 +1,7 @@
 import './sass/main.scss';
 import './js/mobile-menu-backdrop';
 import './js/checkbox';
+import './js/vacations';
 
 
 const refs = {
