@@ -45,22 +45,22 @@ console.log(localStorage)
 
 
 if (localStorage.getItem("vacancy") === "Game Analyst") {
-    return showVacancy(refs.gameAnalystPage);
+    showVacancy(refs.gameAnalystPage);
 }
 if (localStorage.getItem("vacancy") === "User Manager") {
-    return showVacancy(refs.userManagerPage);
+    showVacancy(refs.userManagerPage);
 }
 if (localStorage.getItem("vacancy") === "Game Designer") {
-    return showVacancy(refs.gameDesignerPage);
+    showVacancy(refs.gameDesignerPage);
 }
 if (localStorage.getItem("vacancy") === "Motion Designer") {
-    return showVacancy(refs.motionDesignerPage);
+    showVacancy(refs.motionDesignerPage);
 }
 if (localStorage.getItem("vacancy") === "Technical Artist") {
-    return showVacancy(refs.technicalArtistPage);
+    showVacancy(refs.technicalArtistPage);
 }
 if (localStorage.getItem("vacancy") === "HR Manager") {
-    return showVacancy(refs.hrManagersPage);
+    showVacancy(refs.hrManagersPage);
 }
 
 
